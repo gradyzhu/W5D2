@@ -1,0 +1,27 @@
+USERS / NEW
+
+
+<h2>Sign Up for Reddit Today!</h2>
+
+<form action="<%=users_url%>" method="post">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <ul>
+        <label>
+            Username
+            <input type="text" name="user[username]">
+        </label>
+
+        <br>
+
+        <label>
+            Password
+            <input type="text" name="user[password]">
+        </label>
+        
+        <br> 
+
+        <input type="submit" value="submit">
+    </ul>
+</form>
+
+<a href="<%=new_session_url%>">Sign In!</a>
